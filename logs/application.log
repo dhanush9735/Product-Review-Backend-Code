@@ -1,0 +1,54 @@
+2022-10-29 12:46:50.707  INFO 13332 --- [restartedMain] com.product.review.ReviewApplication     : Starting ReviewApplication using Java 18.0.2 on inlen8520024660 with PID 13332 (C:\Users\AMARGK\eclipse-workspace\review\target\classes started by amargk in C:\Users\AMARGK\eclipse-workspace\review)
+2022-10-29 12:46:50.708  INFO 13332 --- [restartedMain] com.product.review.ReviewApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 12:46:50.751  INFO 13332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-29 12:46:50.756  INFO 13332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-29 12:46:51.299  INFO 13332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-29 12:46:51.342  INFO 13332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+2022-10-29 12:46:51.887  INFO 13332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8095 (http)
+2022-10-29 12:46:51.897  INFO 13332 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 12:46:51.897  INFO 13332 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 12:46:51.952  INFO 13332 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 12:46:51.952  INFO 13332 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1196 ms
+2022-10-29 12:46:52.079  INFO 13332 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-29 12:46:52.118  INFO 13332 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-10-29 12:46:52.240  INFO 13332 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-29 12:46:52.320  INFO 13332 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-29 12:46:52.540  INFO 13332 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-29 12:46:52.552  INFO 13332 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-10-29 12:46:53.010  WARN 13332 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-10-29 12:46:53.010  WARN 13332 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "product" does not exist, skipping
+2022-10-29 12:46:53.012  WARN 13332 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-10-29 12:46:53.012  WARN 13332 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "product" does not exist, skipping
+2022-10-29 12:46:53.012  WARN 13332 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-10-29 12:46:53.012  WARN 13332 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "seller" does not exist, skipping
+2022-10-29 12:46:53.012  WARN 13332 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-10-29 12:46:53.012  WARN 13332 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "user1" does not exist, skipping
+2022-10-29 12:46:53.013  WARN 13332 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-10-29 12:46:53.013  WARN 13332 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "hibernate_sequence" does not exist, skipping
+2022-10-29 12:46:53.066  INFO 13332 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-29 12:46:53.072  INFO 13332 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-29 12:46:53.501  WARN 13332 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-29 12:46:53.690  WARN 13332 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Invalid mapping on handler class [com.product.review.controller.UserController]: public void com.product.review.controller.UserController.compare(int,int)
+2022-10-29 12:46:53.691  INFO 13332 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-29 12:46:53.693  INFO 13332 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-29 12:46:53.697  INFO 13332 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-29 12:46:53.699  INFO 13332 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-10-29 12:46:53.714  INFO 13332 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-10-29 12:46:53.731 ERROR 13332 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Invalid mapping pattern detected: /{id}/{id}
+      ^
+Not allowed to capture 'id' twice in the same pattern
+
+Action:
+
+Fix this pattern in your application or switch to the legacy parser implementation with 'spring.mvc.pathmatch.matching-strategy=ant_path_matcher'.
+
